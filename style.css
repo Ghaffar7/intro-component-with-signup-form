@@ -150,6 +150,10 @@ form .input span.error {
   font-size: 0.5em;
 }
 
+input[type="email"] {
+  transition: color 0.3s ease;
+}
+
 .footer-text {
   color: hsl(246, 25%, 77%);
   font-size: 0.625rem;
@@ -163,7 +167,16 @@ form .input span.error {
   }
 }
 
-
+.success-message {
+  display: none;
+  color: green;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.success-message.visible {
+  display: block;
+}
 
 @media screen and (max-width: 900px) {
   body {
